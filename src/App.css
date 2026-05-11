@@ -1,3 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg); */
+}
+
+
+.btn{
+width: 8rem;
+font-size: larger;
+padding: 2vmx auto;
+border-radius: 10px;
+color: blue;
+font-weight: bold;
+background-color: rgb(217, 215, 228);
+
+}
+
+
+.btn1{
+width: 8rem;
+font-size: larger;
+padding: 2vmx auto;
+border-radius: 10px;
+color: blue;
+font-weight: bold;
+background-color: rgb(217, 215, 228);
+
+}
+
+.btn:hover{
+  background-color: rgb(255, 255, 0);
+  color: red;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

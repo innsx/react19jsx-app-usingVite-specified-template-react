@@ -3,7 +3,6 @@ function MyFunc() {
         <button>My Button 4</button>
     </div>)
 }
-
 export default MyFunc;
 
 
