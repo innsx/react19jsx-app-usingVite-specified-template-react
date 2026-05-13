@@ -3,6 +3,21 @@ import { useState } from "react";
 import AlertButton from "./AlertButton";
 import NamingEventHandlerAsProps from "./NamingEventHandlerAsProps";
 import ToolBar from "./ToolBar";
+import NamingEventHandlerAsProps1 from "./NamingEventHandlerAsProps1";
+import FindMax from "./FindMax";
+import SumValue from "./SumValue";
+import SortArrayAscendingWithCompreFunc from "./SortArrayAscendingWithCompreFunc";
+import SortArrayDescending from "./SortArrayDescending";
+import SortStringAscending from "./SortStringAscending";
+import SortStringReverse from "./SortStringReverse";
+import SortStringUsingToSortedMethod from "./SortStringUsingToSortedMethod";
+import ArrayEveryWithuseEffectuseRef from "./ArrayEveryWithuseEffectuseRef";
+import UseStateStoreValueLetReactRender from "./UseStateStoreValueLetReactRender";
+import ArrayForeachLoop from "./ArrayForeachLoop";
+import ArrayMap from "./ArrayMap";
+import ArrayUpdateUsingUseState from "./ArrayUpdateUsingUseState";
+import PostAPIRequest from "./PostAPIRequest";
+import ShowPosts from "./ShowPosts";
 
 const ButtonContainers = () => {
   const [num, setNum] = useState(0);
@@ -25,6 +40,14 @@ const ButtonContainers = () => {
     return "Hello, " + name + "!";
   }
   let text = sayHello("Alice");
+
+  const intArray = [11, 52, 37, 411, 5];
+
+  const strgArray = ["cherry", "banana", "strawberry", "apple"];
+
+  // const strgArray2 =["cherry", "banana", "strawberry", "apple"];
+
+  // const ageArray = [32, 33, 16, 40];
 
   return (
     <div className="App">
@@ -62,10 +85,8 @@ const ButtonContainers = () => {
         Click me three
       </button>
       <p id="demo3"></p>
-
       <br />
       <br />
-
       {/* example of passing anonymous function/using inline function in onClick event handler */}
       <button
         className="btn"
@@ -87,16 +108,13 @@ const ButtonContainers = () => {
         Click me five
       </button>
       <p id="demo5"></p>
-
       <br />
       <br />
-
       {/* passes a function: handleSum */}
       <button className="btn" onClick={handleSum}>
         Add
       </button>
       <p id="demo6"></p>
-
       <br />
       <br />
       <AlertButton className="btn1" message="Uploading....">
@@ -106,7 +124,6 @@ const ButtonContainers = () => {
       <AlertButton message="Downloading....">Download message</AlertButton>
       <br />
       <br />
-
       {/* when button on NamingEventHandlerAsProps component is clicked, it calls the onSmash prop 
       which passes the anonymouse () => alert('...') function. */}
       <NamingEventHandlerAsProps onSmash={() => alert("Smash button clicked")}>
@@ -116,6 +133,54 @@ const ButtonContainers = () => {
       <br />
       <ToolBar />
       <br />
+      <br />
+      <NamingEventHandlerAsProps1
+        onPlayMovie={() => alert("Playing movies")}
+        onUploadImage={() => alert("Uploading image")}
+      />
+      <br />
+      <br />
+      <FindMax arr={intArray} />
+      <br />
+      <br />
+      <SumValue arr={intArray} />
+      <br />
+      <br />
+      <SortArrayAscendingWithCompreFunc arr={intArray} />
+      <br />
+      <br />
+      <SortArrayDescending arr={intArray} />
+      <br />
+      <br />
+      <SortStringAscending arr={strgArray} />
+      <br />
+      <br />
+      <SortStringReverse arr={strgArray} />
+      <br />
+      <br />
+      <SortStringUsingToSortedMethod arr={strgArray} />
+      <br />
+      <br />
+      <ArrayForeachLoop  />
+      <br />
+      <br />
+      <ArrayMap arr={intArray} />
+      <br />
+      <br />
+
+      <ArrayEveryWithuseEffectuseRef arr={intArray} />
+      <br />
+      <br />
+      <UseStateStoreValueLetReactRender arr={intArray} />
+      <br />
+      <br />
+      <ArrayUpdateUsingUseState />
+      <br />
+      <br />
+
+      <ShowPosts />
+      {/* <PostAPIRequest /> */}
+           <br />
       <br />
     </div>
   );

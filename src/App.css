@@ -1,3 +1,8 @@
+.flexStart
+{
+  display: flex;
+  justify-content: flex-start;
+}
 .App {
   display: flex;
   flex-direction: column;
