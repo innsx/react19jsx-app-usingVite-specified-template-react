@@ -3,6 +3,32 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.textAlignleft{
+  text-align: left;
+}
+.alignMargin{
+  margin: 5px;
+  
+}
+
+.formStyle {
+  text-align: left;
+  background-color: aquamarine;
+}
+
+.alignFormMargin
+{
+  display: flex;
+  margin-right: 15px;
+}
+
+#box{
+  width: 50px;
+  height: 25px;
+  background-color: rgb(9, 210, 96);
+  cursor: pointer;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -46,7 +72,27 @@ background-color: rgb(217, 215, 228);
 }
 
 
-.counter {
+/* .chat, .contact-list {
+  float: left;
+  margin-bottom: 20px;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li button {
+  width: 100px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.textArea {
+  height: 150px;
+} */
+
+
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -229,4 +275,4 @@ background-color: rgb(217, 215, 228);
     right: 0;
     border-right-color: var(--border);
   }
-}
+} */

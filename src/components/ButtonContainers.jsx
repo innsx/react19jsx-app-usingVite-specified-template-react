@@ -16,8 +16,19 @@ import UseStateStoreValueLetReactRender from "./UseStateStoreValueLetReactRender
 import ArrayForeachLoop from "./ArrayForeachLoop";
 import ArrayMap from "./ArrayMap";
 import ArrayUpdateUsingUseState from "./ArrayUpdateUsingUseState";
-import PostAPIRequest from "./PostAPIRequest";
+// import APIRequestWithFetch from "./APIRequestWithFetch";
 import ShowPosts from "./ShowPosts";
+import APIAxiosGetRequestUseEffectNoDepcy from "./APIAxiosGetRequestUseEffectNoDepcy";
+import ArrayFilterToUpdateArray from "./ArrayFilterToUpdateArray";
+import UseEffectAsyncAwaitNeedsCleanup from "./UseEffectAsyncAwaitNeedsCleanup";
+import APIAxiosPostRequest from "./APIAxiosPostRequest";
+import APIAxiosGetRequestHandleError from "./APIAxiosGetRequestHandleError";
+import FormSubmitWithData from "./FormSubmitWithData";
+import FormWithInputControl from "./FormWithInputControl";
+import FormWithMultipleInputs from "./FormWithMultipleInputs";
+import ReactingToInputsWithState from "./ReactingToInputsWithState";
+import PreservingNResettingState from "../components/States/PreservingNResettingState"
+
 
 const ButtonContainers = () => {
   const [num, setNum] = useState(0);
@@ -50,6 +61,7 @@ const ButtonContainers = () => {
   // const ageArray = [32, 33, 16, 40];
 
   return (
+    <>
     <div className="App">
       <br />
       <br />
@@ -161,7 +173,7 @@ const ButtonContainers = () => {
       <SortStringUsingToSortedMethod arr={strgArray} />
       <br />
       <br />
-      <ArrayForeachLoop  />
+      <ArrayForeachLoop />
       <br />
       <br />
       <ArrayMap arr={intArray} />
@@ -179,10 +191,46 @@ const ButtonContainers = () => {
       <br />
 
       <ShowPosts />
-      {/* <PostAPIRequest /> */}
-           <br />
+      <br />
+      <br />
+
+      <APIAxiosGetRequestUseEffectNoDepcy />
+
+      <br />
+      <br />
+      <ArrayFilterToUpdateArray />
+      <br />
+      <br />
+      <UseEffectAsyncAwaitNeedsCleanup />
+      <br />
+      <br />
+      <APIAxiosPostRequest />
+      <br />
+      <br />
+      <APIAxiosGetRequestHandleError />
+
+      <br />
+      <br />
+      <FormSubmitWithData />
+
+      <br />
+      <br />
+      <FormWithInputControl />
+      <br />
+      <br />
+      <FormWithMultipleInputs />
+      <br />
+      <br />
+
+      <ReactingToInputsWithState />
+      <br />
+      <br />
+      <PreservingNResettingState/>
+
+            <br />
       <br />
     </div>
+    </>
   );
 };
 

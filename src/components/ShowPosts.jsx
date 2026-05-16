@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import PostAPIRequest from './PostAPIRequest';
+import APIRequestWithFetch from './APIRequestWithFetch';
 
 export default function ShowPosts() {
   const [show, setShow] = useState(false);
@@ -9,7 +9,7 @@ export default function ShowPosts() {
   }
 
   return (
-    <div><button className='btn' onClick={handleShowPosts}>Show Posts</button>
-    {show && <PostAPIRequest/>}</div>
+    <div><button className='btn' onClick={handleShowPosts}>Show API Request with Fetch</button>
+    {show && <APIRequestWithFetch/>}</div>
   )
 }

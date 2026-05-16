@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 
-export default function PostAPIRequest() {
+// https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/
+export default function APIRequestWithFetch() {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const controller = new AbortController();
-    const signal = controller.signal;
+    // const signal = controller.signal;
 
     // fetch("https://jsonplaceholder.typicode.com/posts", { signal })
     //   .then((res) => res.json())
